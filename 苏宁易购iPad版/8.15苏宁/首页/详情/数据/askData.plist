@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>username</key>
+            <string>yangna988</string>
+            <key>question</key>
+            <string>进店用排队吗？</string>
+            <key>answer</key>
+            <string>您好，这是需要看实际情况的，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:27</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>lwz1260270</string>
+            <key>question</key>
+            <string>优惠券能退回现金吗？</string>
+            <key>answer</key>
+            <string>您好，优惠券并不能退回现金，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:28</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>charmingoddess</string>
+            <key>question</key>
+            <string>停车位随时有吗？</string>
+            <key>answer</key>
+            <string>您好，这是需要看实际情况的，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:32</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>灭锑号</string>
+            <key>question</key>
+            <string>随时去都可以吗？</string>
+            <key>answer</key>
+            <string>您好，只要在使用期内随时都可以的，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:35</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>灭锑号2</string>
+            <key>question</key>
+            <string>优惠券过期能退款吗？</string>
+            <key>answer</key>
+            <string>您好，这需要看商家实际情况，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:35</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>王清田</string>
+            <key>question</key>
+            <string>优惠券能和别的优惠一起用吗？</string>
+            <key>answer</key>
+            <string>您好，很抱歉不能，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:37</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>机器斗士</string>
+            <key>question</key>
+            <string>需要预约吗？</string>
+            <key>answer</key>
+            <string>您好，这是需要看实际情况的，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:38</string>
+        </dict>
+        <dict>
+            <key>username</key>
+            <string>charmingoddess</string>
+            <key>question</key>
+            <string>东西能打包吗？</string>
+            <key>answer</key>
+            <string>您好，这是需要看实际情况的，祝您生活愉快</string>
+            <key>time</key>
+            <string>2015－08-04 09:05:39</string>
+        </dict>
+            </array>
+</plist>
+

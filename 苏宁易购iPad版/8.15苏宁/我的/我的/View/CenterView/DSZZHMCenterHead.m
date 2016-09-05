@@ -1,0 +1,20 @@
+//
+//  DSZZHMCenterHead.m
+//  8.1苏宁ipad
+//
+//  Created by app01 on 15/8/2.
+//  Copyright (c) 2015年 lovena. All rights reserved.
+//
+
+#import "DSZZHMCenterHead.h"
+
+@implementation DSZZHMCenterHead
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    _username.text = _tel;
+}
+
+
+@end

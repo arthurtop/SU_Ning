@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Controller-->
+        <scene sceneID="Sd2-Hi-IGc">
+            <objects>
+                <viewController storyboardIdentifier="XQ" id="07i-wl-cja" customClass="DSZDACXQController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="41X-qu-FFO">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="wYJ-lQ-xHq">
+                                <rect key="frame" x="5" y="20" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="h0q-eW-JjU">
+                                        <rect key="frame" x="46" y="8" width="260" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R5U-uP-FKR">
+                                        <rect key="frame" x="982" y="12" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" image="kHomeEbuy.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="kHomeEbuy_High.png"/>
+                                        <connections>
+                                            <action selector="personClick" destination="07i-wl-cja" eventType="touchUpInside" id="DlQ-0m-gkK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="39Z-vS-JUz">
+                                        <rect key="frame" x="876" y="12" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeNavLog.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeClick" destination="07i-wl-cja" eventType="touchUpInside" id="Hn5-P8-pQw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="csc-4u-IhT">
+                                        <rect key="frame" x="930" y="12" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="kHomeShopCart.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="kHomeShopCart_High.png"/>
+                                        <connections>
+                                            <action selector="goBuyClick" destination="07i-wl-cja" eventType="touchUpInside" id="9PV-ud-hta"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NdI-xt-yp9">
+                                        <rect key="frame" x="8" y="12" width="30" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="nav_back_normal.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="returnClick" destination="07i-wl-cja" eventType="touchUpInside" id="Md9-fc-Mp2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P0k-Ek-yst">
+                                        <rect key="frame" x="46" y="8" width="221" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchClick" destination="07i-wl-cja" eventType="touchUpInside" id="F1A-f9-e8R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="PLc-Ny-azt">
+                                <rect key="frame" x="0.0" y="63" width="1024" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i9j-V3-6AQ">
+                                <rect key="frame" x="0.0" y="65" width="1024" height="703"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="VM5-RC-XFq">
+                                        <rect key="frame" x="17" y="17" width="311" height="335"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBgView.png" id="VOf-3h-tYa">
+                                                <rect key="frame" x="0.0" y="8" width="303" height="327"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="加载中.png" id="9Oz-rP-1GN">
+                                                <rect key="frame" x="8" y="16" width="287" height="312"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="H37-b7-Kj6">
+                                        <rect key="frame" x="17" y="367" width="304" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ziying_icon.png" id="IEV-xg-WhW">
+                                        <rect key="frame" x="372" y="32" width="22" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gfJ-ws-htD">
+                                        <rect key="frame" x="402" y="26" width="506" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xOS-UA-MHb">
+                                        <rect key="frame" x="942" y="32" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="share_icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shareClick" destination="07i-wl-cja" eventType="touchUpInside" id="UuX-vu-DGR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 200.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8AE-mK-m4r">
+                                        <rect key="frame" x="385" y="121" width="103" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="1" green="0.2336297286" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥215.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vXq-MI-H5Q">
+                                        <rect key="frame" x="496" y="137" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="hrc-SE-Ygn">
+                                        <rect key="frame" x="492" y="146" width="58" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大聚惠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RsF-MP-KXO">
+                                        <rect key="frame" x="581" y="137" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已购买：387件" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nZF-a0-aEP">
+                                        <rect key="frame" x="385" y="167" width="138" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="88AF85DE-1F4A-411F-B5F0-2D98AA2E3316" id="2gL-qA-w59">
+                                        <rect key="frame" x="365" y="207" width="617" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送至：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X8f-3J-bU0">
+                                        <rect key="frame" x="385" y="216" width="51" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免运费,23:00前完成下单，预计明天送达" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJm-RX-fSY">
+                                        <rect key="frame" x="447" y="256" width="338" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xMz-f0-TGs">
+                                        <rect key="frame" x="385" y="289" width="44" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="由苏宁销售和发货，并享受售后服务" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="afb-ET-LOq">
+                                        <rect key="frame" x="434" y="288" width="302" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="productDetail_ziti.png" id="tAm-uA-Nzx">
+                                        <rect key="frame" x="449" y="328" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支持自提" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DbQ-wm-4bY">
+                                        <rect key="frame" x="472" y="325" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="productDetail_freight.png" id="wVo-XH-VK0">
+                                        <rect key="frame" x="567" y="328" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免运费" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tjt-1u-f4Q">
+                                        <rect key="frame" x="589" y="325" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选择:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jJd-od-7PA">
+                                        <rect key="frame" x="382" y="356" width="62" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距活动结束" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ke-2l-KR2">
+                                        <rect key="frame" x="379" y="404" width="93" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hbh-ja-r94">
+                                        <rect key="frame" x="473" y="409" width="35" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1Z-oR-9mZ">
+                                        <rect key="frame" x="516" y="411" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pkk-7V-kAm">
+                                        <rect key="frame" x="542" y="409" width="35" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayr-SG-Rv4">
+                                        <rect key="frame" x="580" y="411" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jSx-qI-JJa">
+                                        <rect key="frame" x="599" y="409" width="35" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xxK-NH-Mxo">
+                                        <rect key="frame" x="636" y="411" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nua-xh-fcx">
+                                        <rect key="frame" x="696" y="411" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SgB-XA-XgX">
+                                        <rect key="frame" x="372" y="453" width="147" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.23921570180000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="立即购买">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buyNowClick" destination="07i-wl-cja" eventType="touchUpInside" id="XnX-m8-lBx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AKW-Df-jpl">
+                                        <rect key="frame" x="563" y="453" width="147" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="加入购物车">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToBuyClick" destination="07i-wl-cja" eventType="touchUpInside" id="jQR-T9-8Kf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dXx-fz-BbD">
+                                        <rect key="frame" x="382" y="70" width="523" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KfJ-dX-c6Y">
+                                        <rect key="frame" x="656" y="409" width="35" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sag-W1-hvP">
+                                        <rect key="frame" x="449" y="356" width="185" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="1件" backgroundImage="add_address_select_btn.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clooseClick" destination="07i-wl-cja" eventType="touchUpInside" id="O03-4y-fdX"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gza-rG-sRC">
+                                        <rect key="frame" x="0.0" y="529" width="1024" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="161-ep-DyU" userLabel="黄线">
+                                                <rect key="frame" x="47" y="43" width="128" height="2"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.69087727860000003" blue="0.20933024089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" id="aXu-Iv-sn8">
+                                                <rect key="frame" x="0.0" y="45" width="1024" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" id="T6K-TX-x0h">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0yN-gV-MdZ">
+                                                        <rect key="frame" x="71" y="8" width="87" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="基本信息">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected" title="基本信息">
+                                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="baseClick" destination="07i-wl-cja" eventType="touchUpInside" id="NAy-e0-N4V"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ju0-xH-KgC">
+                                                        <rect key="frame" x="607" y="5" width="87" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="评价/晒单">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected" title="评价/晒单">
+                                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="goodsComentClick" destination="07i-wl-cja" eventType="touchUpInside" id="lsB-dl-mg3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IGZ-zC-FBd">
+                                                        <rect key="frame" x="321" y="5" width="87" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="商品参数">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected" title="商品参数">
+                                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="goodsDetailShowClick" destination="07i-wl-cja" eventType="touchUpInside" id="5TQ-QJ-YxV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dRu-Vs-95p">
+                                                        <rect key="frame" x="861" y="5" width="87" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="咨询">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected" title="咨询">
+                                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="askClick" destination="07i-wl-cja" eventType="touchUpInside" id="KqF-9t-YMF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Wc-B2-kI9">
+                                        <rect key="frame" x="449" y="218" width="185" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="许昌" backgroundImage="add_address_select_btn.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addressClick" destination="07i-wl-cja" eventType="touchUpInside" id="VsU-2Y-8oz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Rm-gc-OB7">
+                                        <rect key="frame" x="741" y="469" width="94" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="收藏" image="saidan.png">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="saidanselect.png"/>
+                                        <state key="selected" image="saidanselect.png"/>
+                                        <connections>
+                                            <action selector="favoriteClick" destination="07i-wl-cja" eventType="touchUpInside" id="OxH-B8-QIu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="address" destination="7Wc-B2-kI9" id="J2c-2J-f60"/>
+                        <outlet property="askView" destination="dRu-Vs-95p" id="ySU-YV-ho0"/>
+                        <outlet property="baseView" destination="0yN-gV-MdZ" id="6w9-rw-gAk"/>
+                        <outlet property="bigScrollerView" destination="i9j-V3-6AQ" id="30U-bs-PFG"/>
+                        <outlet property="bigimage" destination="9Oz-rP-1GN" id="gfv-Z8-7xq"/>
+                        <outlet property="bottomScrollView" destination="gza-rG-sRC" id="Q3l-OL-We0"/>
+                        <outlet property="buttonTotalView" destination="T6K-TX-x0h" id="IGj-P1-pJk"/>
+                        <outlet property="buyCount" destination="nZF-a0-aEP" id="7MI-xg-pB9"/>
+                        <outlet property="buyDetail" destination="Sag-W1-hvP" id="6lo-MD-i48"/>
+                        <outlet property="buyNowView" destination="SgB-XA-XgX" id="RwQ-ht-KET"/>
+                        <outlet property="day" destination="Hbh-ja-r94" id="XTr-wd-ABg"/>
+                        <outlet property="favoriteButton" destination="7Rm-gc-OB7" id="vE4-Su-3wn"/>
+                        <outlet property="goodsComentView" destination="Ju0-xH-KgC" id="2Fy-J6-SOn"/>
+                        <outlet property="goodsDetailShowView" destination="IGZ-zC-FBd" id="rnS-mP-XvA"/>
+                        <outlet property="hour" destination="pkk-7V-kAm" id="M30-Mi-Fsh"/>
+                        <outlet property="inver" destination="KfJ-dX-c6Y" id="Fku-eh-cDA"/>
+                        <outlet property="nowPrice" destination="8AE-mK-m4r" id="nwO-vK-Urx"/>
+                        <outlet property="oldPrice" destination="vXq-MI-H5Q" id="EvY-LD-F6x"/>
+                        <outlet property="prepareBuyView" destination="AKW-Df-jpl" id="p21-bs-G9g"/>
+                        <outlet property="second" destination="jSx-qI-JJa" id="vCW-5b-t0p"/>
+                        <outlet property="smallScrollView" destination="H37-b7-Kj6" id="YLQ-k2-DOh"/>
+                        <outlet property="subTitle" destination="dXx-fz-BbD" id="jf6-NP-Tzd"/>
+                        <outlet property="textField" destination="h0q-eW-JjU" id="XhV-PW-Jo6"/>
+                        <outlet property="titleName" destination="gfJ-ws-htD" id="Bka-11-M50"/>
+                        <outlet property="yelloView" destination="161-ep-DyU" id="YGJ-JT-qgd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nse-RD-DeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="88AF85DE-1F4A-411F-B5F0-2D98AA2E3316" width="1364" height="2">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPETeuTU0AKgAAKqilpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1Ng
+AAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAAApKSkw
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAA
+AAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAA
+U1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAA
+AAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlvykpKTAAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAA
+AAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uP
+AAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAAAAAAA
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAA
+AAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/
+paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAA
+KSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAA
+AAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uP
+paWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlv1NTU2AAAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAA
+AAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+AAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAA
+e3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAA
+AAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAAFNTU2ClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAA
+AAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkw
+AAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAABTU1Ng
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/
+paWlv3t7e48AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAA
+AAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+KSkpMAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAA
+U1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/
+paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAA
+AAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlvykpKTAAAAAAAAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAA
+AAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1Ng
+AAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAApKSkw
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAA
+AAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/
+paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAA
+KSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAA
+AAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlv1NTU2AAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAA
+AAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uP
+AAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAA
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAA
+AAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAFNTU2ClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAA
+AAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkw
+AAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uP
+paWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/
+paWlv3t7e48AAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAA
+AAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAABTU1NgpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+AAAAAAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAA
+e3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb9TU1NgAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAA
+AAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/KSkpMAAAAAAAAAAAAAAAACkpKTClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAAU1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/
+paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAA
+AAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAAAAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/
+paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAAAAAAAClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1Ng
+AAAAAAAAAAAAAAAAKSkpMKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvykpKTAAAAAAAAAAAAAAAABTU1Ng
+paWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/AAAAAAAAAAAAAAAAAAAAAFNTU2ClpaW/paWlv6Wlpb+lpaW/
+paWlv6Wlpb8AAAAAAAAAAAAAAAAAAAAAe3t7j6Wlpb+lpaW/paWlv6Wlpb+lpaW/e3t7jwAAAAAAAAAA
+AAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAKWlpb+lpaW/
+paWlv6Wlpb+lpaW/paWlv1NTU2AAAAAAAAAAAAAAAAApKSkwpaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/
+KSkpMAAAAAAAAAAAAAAAACkpKTClpaW/paWlv6Wlpb+lpaW/paWlv6Wlpb8pKSkwAAAAAAAAAAAAAAAA
+U1NTYKWlpb+lpaW/paWlv6Wlpb+lpaW/paWlvwAAAAAAAAAAAAAAAAAAAAB7e3uPpaWlv6Wlpb+lpaW/
+paWlv6Wlpb97e3uPAAAAAAAAAAAAAAAAAAAAAHt7e4+lpaW/paWlv6Wlpb+lpaW/paWlv3t7e48AAAAA
+AAAAAAAAAAAAAAAApaWlv6Wlpb+lpaW/paWlv6Wlpb+lpaW/U1NTYAAAAAAAAAAAAAAAAAAAAAClpaW/
+paWlv6Wlpb+lpaW/paWlv6Wlpb9TU1NgAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAA
+AAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAADc3N0Dc3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/wAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAA
+AAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/
+AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAABubm5/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAA
+AAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+Nzc3QAAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAA
+bm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAA
+AAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAAAAAAADc3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/zc3N0AAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAA
+AAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/
+AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAAAAAAAAAAA3NzdA
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAA
+AAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+bm5ufwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAA
+Nzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAA
+AAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAAClpaW/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/25ubn8AAAAAAAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAA
+AAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAA
+AAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAAG5ubn/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+paWlvwAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAA
+AAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdA
+AAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAABubm5/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAA
+AAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+Nzc3QAAAAAAAAAAAAAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAA
+paWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAA
+AAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAADc3N0Dc3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/wAAAAAAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAA
+AAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/
+AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAAA3NzdA
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAA
+AAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+bm5ufwAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAA
+bm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAA
+AAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAADc3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/zc3N0AAAAAAAAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAA
+AAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/
+AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAAAAAAAAAAAAAAAA
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAA
+AAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+paWlvwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAA
+Nzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAAG5ubn/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAA
+AAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/wAAAAAAAAAAAAAAAAAAAAClpaW/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/25ubn8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAA
+AAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdAAAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAABubm5/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA
+paWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAAAAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAA
+AAAAAAAAAAA3NzdA3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/Nzc3QAAAAAAAAAAAAAAAAG5ubn/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P8AAAAAAAAAAAAAAAAAAAAAbm5uf9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/wAAAAAAAAAAAAAAAAAAAAClpaW/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P+lpaW/AAAAAAAAAAAAAAAA
+AAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAA3Nzc/9zc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/bm5ufwAAAAAAAAAAAAAAADc3N0Dc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P83NzdA
+AAAAAAAAAAAAAAAANzc3QNzc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/zc3N0AAAAAAAAAAAAAAAABubm5/
+3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/AAAAAAAAAAAAAAAAAAAAAKWlpb/c3Nz/3Nzc/9zc3P/c3Nz/
+3Nzc/6Wlpb8AAAAAAAAAAAAAAAAAAAAApaWlv9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/paWlvwAAAAAAAAAA
+AAAAAAAAAADc3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P9ubm5/AAAAAAAAAAAAAAAAAAAAANzc3P/c3Nz/
+3Nzc/9zc3P/c3Nz/3Nzc/25ubn8AAAAAAA4BAAADAAAAAQVUAAABAQADAAAAAQACAAABAgADAAAABAAA
+K1YBAwADAAAAAQABAAABBgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAE
+AAABFgADAAAAAQACAAABFwAEAAAAAQAAKqABHAADAAAAAQABAAABUgADAAAAAQABAAABUwADAAAABAAA
+K16HcwAHAAAMSAAAK2YAAAAAAAgACAAIAAgAAQABAAEAAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfO
+AAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rl
+c2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJY
+WVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1
+bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJU
+UkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhld2xldHQtUGFja2FyZCBDb21wYW55
+AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4x
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA
+81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAA
+YpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVj
+LmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0Ig
+Y29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29s
+b3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2Ug
+Vmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdp
+bmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdmlldwAA
+AAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAATAlWAFAAAABXH+dtZWFzAAAAAAAA
+AAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBjdXJ2AAAAAAAABAAAAAAFAAoADwAU
+ABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACp
+AK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFS
+AVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJB
+AksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+
+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE/gUN
+BRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1
+BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6
+CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvh
+C/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7u
+DwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJk
+EoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJ
+FmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqe
+GsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9p
+H5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSr
+JNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpo
+KpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCk
+MNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdg
+N5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6g
+PuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZn
+RqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63
+TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeS
+V+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8
+YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3
+a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWF
+deF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4Co
+gQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/Ixj
+jMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4
+mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWp
+phqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4
+s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFn
+wePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA5
+0LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v
+4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M
+8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//9Ii
+IyQlWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoyYnKF8QEE5TQml0bWFwSW1h
+Z2VSZXBaTlNJbWFnZVJlcFhOU09iamVjdNIiIyorV05TQXJyYXmiKijSIiMtLl5OU011dGFibGVBcnJh
+eaMtKijTMDEJMjM0V05TV2hpdGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0iIjNjdXTlNDb2xvcqI2KNIi
+Izk6V05TSW1hZ2WiOShfEA9OU0tleWVkQXJjaGl2ZXLRPT5Ucm9vdIABAAgAEQAaACMALQAyADcARQBL
+AFQAWwBoAG8AdwB5AH4AgACCAIcAkgCUAJYAmACdAKAAogCkAKYAqACtAMQAxgDIOHo4fziKOJM4pjiq
+OL04yDjRONY43jjhOOY49Tj5OQA5CDkVORo5HDkeOSM5KzkuOTM5Ozk+OVA5UzlYAAAAAAAAAgEAAAAA
+AAAAPwAAAAAAAAAAAAAAAAAAOVo
+</mutableData>
+        </image>
+        <image name="add_address_select_btn.png" width="79" height="25"/>
+        <image name="homeNavLog.png" width="25" height="25"/>
+        <image name="imageBgView.png" width="200" height="200"/>
+        <image name="kHomeEbuy.png" width="25" height="25"/>
+        <image name="kHomeEbuy_High.png" width="25" height="25"/>
+        <image name="kHomeShopCart.png" width="25" height="25"/>
+        <image name="kHomeShopCart_High.png" width="25" height="25"/>
+        <image name="nav_back_normal.png" width="11" height="20"/>
+        <image name="productDetail_freight.png" width="30" height="30"/>
+        <image name="productDetail_ziti.png" width="15" height="15"/>
+        <image name="saidan.png" width="25" height="25"/>
+        <image name="saidanselect.png" width="25" height="25"/>
+        <image name="share_icon.png" width="40" height="44"/>
+        <image name="ziying_icon.png" width="28" height="33"/>
+        <image name="加载中.png" width="1024" height="768"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DSZCQHelpView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="水电煤缴费帮助" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-2M-eRl">
+                    <rect key="frame" x="0.0" y="25" width="1024" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEN-fx-mC4">
+                    <rect key="frame" x="212" y="66" width="600" height="3"/>
+                    <color key="backgroundColor" white="0.86605674342105265" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-cv-5vS" userLabel="rightLine">
+                    <rect key="frame" x="980" y="98" width="1" height="583"/>
+                    <color key="backgroundColor" white="0.85546875" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSb-AC-6yx" userLabel="leftLine">
+                    <rect key="frame" x="20" y="98" width="1" height="583"/>
+                    <color key="backgroundColor" white="0.85546875" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdw-6F-zwJ" userLabel="bottomLine">
+                    <rect key="frame" x="20" y="680" width="960" height="1"/>
+                    <color key="backgroundColor" white="0.85546875" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRD-oO-abQ" userLabel="topLine">
+                    <rect key="frame" x="20" y="96" width="960" height="1"/>
+                    <color key="backgroundColor" white="0.85546875" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMu-n2-gsV" userLabel="Text View2">
+                    <rect key="frame" x="29" y="105" width="943" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">          水电煤缴费帮助 19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部
+          1890年加拿大成立了世界上第一个冰球协会。
+           1892年国际滑冰联盟在荷兰成立。
+           1893年，在阿姆斯特丹举行了首届男子速度滑冰锦标赛。
+            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAi-72-pOD" userLabel="textViewCellphone">
+                    <rect key="frame" x="29" y="105" width="943" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">       话费充值帮助 冬季奥林匹克运动会，简称为冬季奥运会。国际奥林匹克委员会主办的世界性冬季项目运动会。冬季奥运会每隔4年举行1届，并与奥林匹克运动会隔两年举行。按实际举行次数计算届数。该赛事的主要特征是在冰上和雪地举行的冬季运动，如滑冰、滑雪等适合在冬季举行的项目。
+       第一届冬季奥林匹克运动会于1924年在法国的夏慕尼举行。
+        1986年，国际奥委会全会决定将冬季奥运会和夏季奥运会从1994年起分开每两年间隔举行，1992年冬季奥运会是最后一届与夏季奥运会同年举行的冬奥会。          19世纪末和20世纪初，奥林匹克运动会前影慢慢形成。
+          19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部
+          1890年加拿大成立了世界上第一个冰球协会。
+           1892年国际滑冰联盟在荷兰成立。
+           1893年，在阿姆斯特丹举行了首届男子速度滑冰锦标赛。
+            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条        冬季奥林匹克运动会，简称为冬季奥运会。国际奥林匹克委员会主办的世界性冬季项目运动会。冬季奥运会每隔4年举行1届，并与奥林匹克运动会隔两年举行。按实际举行次数计算届数。该赛事的主要特征是在冰上和雪地举行的冬季运动，如滑冰、滑雪等适合在冬季举行的项目。
+       第一届冬季奥林匹克运动会于1924年在法国的夏慕尼举行。
+        1986年，国际奥委会全会决定将冬季奥运会和夏季奥运会从1994年起分开每两年间隔举行，1992年冬季奥运会是最后一届与夏季奥运会同年举行的冬奥会。          19世纪末和20世纪初，奥林匹克运动会前影慢慢形成。
+          19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部
+          1890年加拿大成立了世界上第一个冰球协会。
+           1892年国际滑冰联盟在荷兰成立。
+           1893年，在阿姆斯特丹举行了首届男子速度滑冰锦标赛。
+            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条           19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部
+          1890年加拿大成立了世界上第一个冰球协会。
+           1892年国际滑冰联盟在荷兰成立。
+           1893年，在阿姆斯特丹举行了首届男子速度滑冰锦标赛。
+            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc9-8z-VsW" userLabel="protocol">
+                    <rect key="frame" x="29" y="105" width="943" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">          自助缴费协议 19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条           19世纪末和20世纪初，一些冰雪运动如滑雪、滑雪撬、滑冰、冰球等项目在欧美国家逐渐得到普及和发展。
+          1887年挪威成立了世界上第一个滑雪俱乐部
+          1890年加拿大成立了世界上第一个冰球协会。
+           1892年国际滑冰联盟在荷兰成立。
+           1893年，在阿姆斯特丹举行了首届男子速度滑冰锦标赛。
+            1908年，法国成立了世界范围的国际冰球联合会。
+在冰雪运动日益普及的情况下，现代奥运会创始人顾拜旦建议单独举办冬季奥运会，但由于1901年北欧两项运动在欧洲斯堪的纳维亚半岛的成功举行而被拖延。
+             1908年第4届夏季奥运会上增加了花样滑冰项目。
+1920年举办第7届夏季奥运会
+国际奥委会拒绝接受北欧两项项目，而增加了冰球项目。花样滑冰和冰球加入奥运会后引起了观众的极大兴趣，但因天气条        冬季奥林匹克运动会，简称为冬季奥运会。国际奥林匹克委员会主办的世界性冬季项目运动会。冬季奥运会每隔4年举行1届，并与奥林匹克运动会隔两年举行。按实际举行次数计算届数。该赛事的主要特征是在冰上和雪地举行的冬季运动，如滑冰、滑雪等适合在冬季举行的项目。
+       第一届冬季奥林匹克运动会于1924年在法国的夏慕尼举行。
+        1986年，国际奥委会全会决定将冬季奥运会和夏季奥运会从1994年起分开每两年间隔举行，1992年冬季奥运会是最后一届与夏季奥运会同年举行的冬奥会。          19世纪末和20世纪初，奥林匹克运动会前影慢慢形成。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="protocol" destination="vc9-8z-VsW" id="lk6-P5-cuH"/>
+                <outlet property="textView" destination="sAi-72-pOD" id="uDX-OO-mim"/>
+                <outlet property="textViewCellphone" destination="CMu-n2-gsV" id="pvG-2P-zrb"/>
+                <outlet property="title" destination="vr6-2M-eRl" id="d3M-DE-Ywm"/>
+            </connections>
+            <point key="canvasLocation" x="555" y="327"/>
+        </view>
+    </objects>
+</document>

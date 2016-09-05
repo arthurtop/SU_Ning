@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+            body, html,#allmap {width: 100%;height: 100%;overflow: hidden;hidden;margin:0;}
+            #l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc;}
+            #r-result{height:100%;width:20%;float:left;}
+            </style>
+        <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+        
+        <title>南京</title>
+    </head>
+    <body>
+        <div id="allmap"></div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    
+    function initialize() {
+        
+        map = new BMap.Map('allmap');
+        
+        var city = document.title;
+        
+        map.centerAndZoom(city, 13);
+                
+        map.addEventListener("tilesloaded",function(){
+                             
+                             var url="protocol://mapLoadOk";
+                             
+                             document.location = url;
+                             
+                             });
+        
+    }
+    
+    function loadScript() {
+        
+        var script = document.createElement("script");
+        
+        script.src = "http://api.map.baidu.com/api?v=1.4&callback=initialize";
+        
+        document.body.appendChild(script);
+    }
+    
+    var map,index;
+        
+    window.onload = loadScript;
+   
+    function mapCenter(center){
+                
+        map.centerAndZoom(center,13);
+
+    };
+    
+    //用户坐标转换完之后的回调函数
+    translateCallback = function (point){
+
+        var myIcon = new BMap.Icon("user_location.png",new BMap.Size(56, 55));
+        
+        var marker = new BMap.Marker(point, {icon: myIcon});
+        
+        map.addOverlay(marker);
+    };
+    
+    //添加用户所在位置
+    function addUser(x,y){
+        
+        var gpsPoint = new BMap.Point(x,y);
+        
+        BMap.Convertor.translate(gpsPoint,0,translateCallback);
+        
+    };
+
+    //门店坐标转换后的处理(返回给controller进行处理)
+    sitTranslateCallback = function (point){
+
+        var url="protocol://translateOk?"+point.lng+"&"+point.lat+"&"+index;
+        
+        document.location = url;
+        
+    };
+    
+    //门店坐标转换
+    function tranGpsToBaidu(x,y,i){
+        
+        index = i;
+
+        var gpsPoint = new BMap.Point(x,y);
+        
+        BMap.Convertor.translate(gpsPoint,0,sitTranslateCallback);
+        
+    };
+    
+    // 添加门店标注
+    function addMarker(x,y,storeName,address,distName,storeLevel,telephone,workDay,weekend,busLine,carPark,symbol,floorLayouts){
+        
+        var myIcon = new BMap.Icon("suning_shop.png",new BMap.Size(36, 49));
+        var marker = new BMap.Marker(new BMap.Point(x,y), {icon: myIcon});
+        map.addOverlay(marker);
+
+        // infowindow的标题
+        var infoWindowTitle = '<div style="font-weight:bold;color:#CE5521;font-size:14px">'+storeName+'</div>';
+        // infowindow的显示信息
+        var infoWindowHtml = [];
+        infoWindowHtml.push('<table cellspacing="0" style="width:250px;font:12px arial,simsun,sans-serif;TABLE-LAYOUT:fixed;WORD-BREAK:break-all"><tbody>');
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '地址：'+address + '</td>');
+        infoWindowHtml.push('</tr>');
+        
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '地区：'+distName + '</td>');
+        infoWindowHtml.push('</tr>');
+        
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '电话：'+telephone + '</td>');
+        infoWindowHtml.push('</tr>');
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '营业时间：工作日'+workDay+'周末'+weekend+ '</td>');
+        infoWindowHtml.push('</tr>');
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '公交线路：'+busLine + '</td>');
+        infoWindowHtml.push('</tr>');
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '停车场：'+carPark + '</td>');
+        infoWindowHtml.push('</tr>');
+        infoWindowHtml.push('<tr>');
+        infoWindowHtml.push('<td style="vertical-align:top;WORD-WRAP:break-word;WORD-BREAK:keep-all;width:100%">' + '楼层设计：'+floorLayouts + '</td>');
+        infoWindowHtml.push('</tr>');
+
+        
+        infoWindowHtml.push('</tbody></table>');
+        
+        var infoWindow = new BMap.InfoWindow(infoWindowHtml.join(""),{title:infoWindowTitle,width:250});
+                
+        marker.addEventListener("click", function(){
+                                 marker.openInfoWindow(infoWindow);
+                                 map.panTo(new BMap.Point(x, y))
+                                 });
+    };
+    
+    function removeAllLayer(){
+        
+        map.clearOverlays();
+    };
+    
+    </script>

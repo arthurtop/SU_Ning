@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DSZZHMAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="873" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addressEdit.png" translatesAutoresizingMaskIntoConstraints="NO" id="eSC-lO-Q5E">
+                        <rect key="frame" x="829" y="31" width="18" height="18"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="SER-B2-cag"/>
+                            <constraint firstAttribute="height" constant="18" id="pTa-eK-uZV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="电话号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-kX-Zh5">
+                        <rect key="frame" x="145" y="8" width="214" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="alL-EG-lZs"/>
+                            <constraint firstAttribute="width" constant="214" id="zrU-7y-v7X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_address_separator_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZ1-Lf-OeV">
+                        <rect key="frame" x="8" y="74" width="857" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ehh-B2-NwN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCB-RL-J24">
+                        <rect key="frame" x="23" y="8" width="116" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="ZFO-5f-n3b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5N-st-Lbe" customClass="RTLabel">
+                        <rect key="frame" x="23" y="40" width="660" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="660" id="KT6-kq-aL9"/>
+                            <constraint firstAttribute="height" constant="34" id="gkf-Mo-fty"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95581054685833333" green="0.95581054685833333" blue="0.95581054685833333" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="QZ1-Lf-OeV" secondAttribute="bottom" constant="-5" id="1a5-cd-xB7"/>
+                    <constraint firstItem="QZ1-Lf-OeV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Jbz-T4-noF"/>
+                    <constraint firstItem="fdQ-kX-Zh5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="NcJ-rU-uGY"/>
+                    <constraint firstItem="gCB-RL-J24" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RdH-gh-Zm1"/>
+                    <constraint firstAttribute="centerY" secondItem="eSC-lO-Q5E" secondAttribute="centerY" id="TRJ-6L-ftg"/>
+                    <constraint firstItem="fdQ-kX-Zh5" firstAttribute="bottom" secondItem="gCB-RL-J24" secondAttribute="bottom" id="WUx-5t-cJI"/>
+                    <constraint firstItem="fdQ-kX-Zh5" firstAttribute="leading" secondItem="gCB-RL-J24" secondAttribute="trailing" constant="6" id="bLr-Nh-uC1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eSC-lO-Q5E" secondAttribute="trailing" constant="18" id="i7W-OC-HYo"/>
+                    <constraint firstItem="gCB-RL-J24" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="nhc-Ya-Cou"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QZ1-Lf-OeV" secondAttribute="trailing" id="xOs-vI-3LL"/>
+                    <constraint firstItem="QZ1-Lf-OeV" firstAttribute="top" secondItem="x5N-st-Lbe" secondAttribute="bottom" id="xuC-hl-cQg"/>
+                    <constraint firstItem="x5N-st-Lbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="z5X-Ow-fVf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.95472005209999999" green="0.95472005209999999" blue="0.95472005209999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="editBtn" destination="eSC-lO-Q5E" id="lKT-yM-EA4"/>
+                <outlet property="label" destination="x5N-st-Lbe" id="GNh-dq-PBy"/>
+                <outlet property="name" destination="gCB-RL-J24" id="lio-7C-OFL"/>
+                <outlet property="tel" destination="fdQ-kX-Zh5" id="U9g-VU-2o8"/>
+            </connections>
+            <point key="canvasLocation" x="564.5" y="267"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_address_separator_line.png" width="634" height="2"/>
+        <image name="addressEdit.png" width="15" height="15"/>
+    </resources>
+</document>

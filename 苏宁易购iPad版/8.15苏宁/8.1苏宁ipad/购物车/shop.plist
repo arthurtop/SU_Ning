@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>shopname</key>
+		<string>帕森官方旗舰店</string>
+		<key>things</key>
+		<array>
+			<dict>
+				<key>image</key>
+				<string>http://image1.suning.cn/b2c/catentries/000000000125318217_1_400x400.jpg</string>
+				<key>title</key>
+				<string>2015新款 帕森男女时尚太阳镜 防紫外线偏光镜 箭头潮墨镜 亮黑色</string>
+				<key>price</key>
+				<string>146.00</string>
+				<key>number</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>image</key>
+				<string>http://image3.suning.cn/b2c/catentries/000000000126109743_1_400x400.jpg</string>
+				<key>title</key>
+				<string>威古氏 墨镜女士明星款太阳镜女潮新款圆脸防紫外线偏光 9039 黑框渐进灰片</string>
+				<key>price</key>
+				<string>167</string>
+				<key>number</key>
+				<string>1</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>shopname</key>
+		<string>初语旗舰店</string>
+		<key>things</key>
+		<array>
+			<dict>
+				<key>image</key>
+				<string>https://img.alicdn.com/bao/uploaded/TB1cFtBIVXXXXa3XVXXSutbFXXX.jpg</string>
+				<key>title</key>
+				<string>初语2015夏季新款 字母宽松显瘦学院风短袖T恤女8520131967</string>
+				<key>price</key>
+				<string>167</string>
+				<key>number</key>
+				<string>1</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>shopname</key>
+		<string>唐狮官方旗舰店</string>
+		<key>things</key>
+		<array>
+			<dict>
+				<key>image</key>
+				<string>http://image1.suning.cn/b2c/catentries/000000000126640078_1_400x400.jpg</string>
+				<key>title</key>
+				<string>唐狮（TonLion）2015夏 男牛津纺迷彩拼接基本短袖衬衫 615211013408</string>
+				<key>price</key>
+				<string>99</string>
+				<key>number</key>
+				<string>1</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

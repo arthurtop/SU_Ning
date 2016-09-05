@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DSZZHMMineDock">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="692"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-97-Etj" customClass="DSZZHMButton">
+                    <rect key="frame" x="26" y="612" width="100" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JVC-cW-a11"/>
+                        <constraint firstAttribute="width" constant="151" id="cD4-LN-z7Q"/>
+                        <constraint firstAttribute="width" constant="100" id="xye-bC-Oga"/>
+                    </constraints>
+                    <state key="normal" title="退出登录" backgroundImage="btnunlogin.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cD4-LN-z7Q"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="ExitAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dSs-4e-JKx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本3.0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkR-V2-chd">
+                    <rect key="frame" x="0.0" y="652" width="151" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S8o-TI-N6f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-g3-lYF" userLabel="center" customClass="DSZZHMButton">
+                    <rect key="frame" x="0.0" y="0.0" width="151" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="个人中心" image="kHomeEbuy.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="kHomeEbuy_High">
+                        <color key="titleColor" red="1" green="0.59458895749784935" blue="0.21886626437183021" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" image="kHomeEbuy.png"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="w9J-hB-3qN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a58-Yq-qyV" userLabel="order" customClass="DSZZHMButton">
+                    <rect key="frame" x="0.0" y="60" width="151" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的订单" image="myorder.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="myorderselect.png">
+                        <color key="titleColor" red="1" green="0.59458895749999996" blue="0.21886626440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="6An-f7-uH0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-oB-yOT" userLabel="yigou" customClass="DSZZHMButton">
+                    <rect key="frame" x="0.0" y="120" width="151" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="287-kG-1U9"/>
+                        <constraint firstAttribute="width" constant="151" id="yDu-0d-ltP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的易购券" image="ebuyquan.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="ebuyquanselect.png">
+                        <color key="titleColor" red="1" green="0.59458895749999996" blue="0.21886626440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="36x-Lu-f0Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZL-dc-cNp" userLabel="address" customClass="DSZZHMButton">
+                    <rect key="frame" x="0.0" y="240" width="151" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的地址" image="address">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="addressselect.png">
+                        <color key="titleColor" red="1" green="0.59458895749999996" blue="0.21886626440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="EPf-Ci-D6R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-2Y-YI9" userLabel="collection" customClass="DSZZHMButton">
+                    <rect key="frame" x="0.0" y="180" width="151" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的收藏" image="saidan.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="saidanselect.png">
+                        <color key="titleColor" red="1" green="0.59458895749999996" blue="0.21886626440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="eGQ-pQ-te1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="width" secondItem="uXf-2Y-YI9" secondAttribute="width" id="1m1-wa-nMw"/>
+                <constraint firstItem="fZL-dc-cNp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1wQ-Dh-e9m"/>
+                <constraint firstItem="uXf-2Y-YI9" firstAttribute="top" secondItem="yKa-oB-yOT" secondAttribute="bottom" id="3O9-xu-AqN"/>
+                <constraint firstAttribute="centerX" secondItem="2u0-97-Etj" secondAttribute="centerX" id="Adg-8y-F0R"/>
+                <constraint firstItem="fZL-dc-cNp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DPI-kX-Ovp"/>
+                <constraint firstAttribute="bottom" secondItem="FkR-V2-chd" secondAttribute="bottom" id="I8w-Ji-7vf"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="height" secondItem="a58-Yq-qyV" secondAttribute="height" id="J7z-RO-KXd"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="width" secondItem="a58-Yq-qyV" secondAttribute="width" id="P4f-iq-VtJ"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="width" secondItem="sIT-g3-lYF" secondAttribute="width" id="PCE-UQ-itD"/>
+                <constraint firstItem="fZL-dc-cNp" firstAttribute="top" secondItem="uXf-2Y-YI9" secondAttribute="bottom" id="PEI-ZS-gI9"/>
+                <constraint firstItem="FkR-V2-chd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WdZ-Mv-nju"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="height" secondItem="sIT-g3-lYF" secondAttribute="height" id="Zba-4p-BNW"/>
+                <constraint firstItem="FkR-V2-chd" firstAttribute="top" secondItem="2u0-97-Etj" secondAttribute="bottom" id="d7E-tu-KKh"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="height" secondItem="fZL-dc-cNp" secondAttribute="height" id="eqk-dt-Fhu"/>
+                <constraint firstItem="sIT-g3-lYF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f6G-2y-5jn"/>
+                <constraint firstItem="sIT-g3-lYF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fIC-8I-J4I"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="width" secondItem="fZL-dc-cNp" secondAttribute="width" id="hij-7W-sly"/>
+                <constraint firstItem="a58-Yq-qyV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jtC-8W-mEB"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="height" secondItem="2u0-97-Etj" secondAttribute="height" id="ntJ-fT-bbF"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="top" secondItem="a58-Yq-qyV" secondAttribute="bottom" id="qGf-xg-W2H"/>
+                <constraint firstItem="uXf-2Y-YI9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qKs-dC-JkP"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="width" secondItem="2u0-97-Etj" secondAttribute="width" id="t8q-kF-7qw"/>
+                <constraint firstItem="a58-Yq-qyV" firstAttribute="top" secondItem="sIT-g3-lYF" secondAttribute="bottom" id="toq-qT-5rW"/>
+                <constraint firstAttribute="trailing" secondItem="FkR-V2-chd" secondAttribute="trailing" id="uAx-qZ-bHH"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="height" secondItem="uXf-2Y-YI9" secondAttribute="height" id="xq0-Mc-a8I"/>
+                <constraint firstItem="yKa-oB-yOT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zQj-fv-vFt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ntJ-fT-bbF"/>
+                    <exclude reference="t8q-kF-7qw"/>
+                    <exclude reference="DPI-kX-Ovp"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="exitBtn" destination="2u0-97-Etj" id="LMO-d4-L3Y"/>
+                <outletCollection property="btns" destination="sIT-g3-lYF" id="D05-I0-eTi"/>
+                <outletCollection property="btns" destination="a58-Yq-qyV" id="Lqf-3c-YJ5"/>
+                <outletCollection property="btns" destination="yKa-oB-yOT" id="UAz-hx-z3w"/>
+                <outletCollection property="btns" destination="uXf-2Y-YI9" id="YSR-Na-JeF"/>
+                <outletCollection property="btns" destination="fZL-dc-cNp" id="5rv-uH-sMD"/>
+            </connections>
+            <point key="canvasLocation" x="456.5" y="392"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="address" width="25" height="25"/>
+        <image name="addressselect.png" width="25" height="25"/>
+        <image name="btnunlogin.png" width="90" height="30"/>
+        <image name="ebuyquan.png" width="25" height="25"/>
+        <image name="ebuyquanselect.png" width="25" height="25"/>
+        <image name="kHomeEbuy.png" width="25" height="25"/>
+        <image name="kHomeEbuy_High" width="25" height="25"/>
+        <image name="myorder.png" width="25" height="25"/>
+        <image name="myorderselect.png" width="25" height="25"/>
+        <image name="saidan.png" width="25" height="25"/>
+        <image name="saidanselect.png" width="25" height="25"/>
+    </resources>
+</document>

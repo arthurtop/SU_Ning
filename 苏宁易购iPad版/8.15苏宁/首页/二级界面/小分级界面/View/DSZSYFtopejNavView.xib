@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WvK-d1-HaA" customClass="DSZSYFtopejNavView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5V-us-725">
+                    <rect key="frame" x="863" y="9" width="25" height="25"/>
+                    <state key="normal" image="homeNavLog">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnHome" destination="WvK-d1-HaA" eventType="touchUpInside" id="xnN-0F-4cl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-SI-oJm">
+                    <rect key="frame" x="918" y="9" width="25" height="25"/>
+                    <state key="normal" image="kHomeShopCart">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="kHomeShopCart_High"/>
+                    <connections>
+                        <action selector="gotoGWC:" destination="WvK-d1-HaA" eventType="touchUpInside" id="YON-8g-VRj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqo-Wz-033">
+                    <rect key="frame" x="973" y="9" width="25" height="25"/>
+                    <state key="normal" image="kHomeEbuy">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="kHomeEbuy_High"/>
+                    <connections>
+                        <action selector="gotoWD:" destination="WvK-d1-HaA" eventType="touchUpInside" id="0y2-cU-Hyx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3s-ha-0vT">
+                    <rect key="frame" x="33" y="7" width="20" height="30"/>
+                    <state key="normal" image="nav_back_normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnBtn" destination="WvK-d1-HaA" eventType="touchUpInside" id="57A-eI-Lbz"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxU-8h-sdj">
+                    <rect key="frame" x="70" y="7" width="300" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX9-0Z-cFj">
+                    <rect key="frame" x="412" y="9" width="200" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-Cd-Iy8">
+                    <rect key="frame" x="70" y="6" width="243" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoSearch" destination="WvK-d1-HaA" eventType="touchUpInside" id="1Yp-4A-9tf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textfield" destination="fxU-8h-sdj" id="fQi-kw-6AL"/>
+                <outlet property="titLabel" destination="dX9-0Z-cFj" id="ZQL-Am-LNU"/>
+            </connections>
+            <point key="canvasLocation" x="496" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeNavLog" width="25" height="25"/>
+        <image name="kHomeEbuy" width="25" height="25"/>
+        <image name="kHomeEbuy_High" width="25" height="25"/>
+        <image name="kHomeShopCart" width="25" height="25"/>
+        <image name="kHomeShopCart_High" width="25" height="25"/>
+        <image name="nav_back_normal" width="11" height="20"/>
+    </resources>
+</document>

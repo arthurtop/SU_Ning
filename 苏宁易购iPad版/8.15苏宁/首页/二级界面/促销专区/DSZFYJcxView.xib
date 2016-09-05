@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DSZFYJcxView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1444"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B63CA70C-919A-4565-B450-A605E7CED819" translatesAutoresizingMaskIntoConstraints="NO" id="rxA-8H-ugM">
+                    <rect key="frame" x="16" y="793" width="319" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euz-xO-rRe">
+                    <rect key="frame" x="16" y="793" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="NVa-D4-joD"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="5607EE55-2606-4CF1-8820-8B3E63A19190" translatesAutoresizingMaskIntoConstraints="NO" id="NsC-FO-j8R">
+                    <rect key="frame" x="353" y="793" width="320" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVo-rj-EG6">
+                    <rect key="frame" x="354" y="793" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="vPf-Kq-TuO"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="index11" translatesAutoresizingMaskIntoConstraints="NO" id="S8I-I9-jF9">
+                    <rect key="frame" x="16" y="15" width="318" height="240"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="index12" translatesAutoresizingMaskIntoConstraints="NO" id="PwV-xX-fsa">
+                    <rect key="frame" x="353" y="15" width="319" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBE-Yi-4h7">
+                    <rect key="frame" x="354" y="15" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kr4-tF-qG1"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="index13" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-dq-HDJ">
+                    <rect key="frame" x="691" y="15" width="319" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn6-Nz-VrB">
+                    <rect key="frame" x="692" y="15" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="bv2-Qt-86n"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1FC5134D-F12B-4A4A-8F13-C511E6E04255" translatesAutoresizingMaskIntoConstraints="NO" id="wqB-V8-HAp">
+                    <rect key="frame" x="353" y="534" width="320" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL8-cd-Njb">
+                    <rect key="frame" x="354" y="534" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="YaA-KS-mi2"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="E7BBC57E-ADE2-4270-8CEE-17C11B54A0BD" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-OU-a1g">
+                    <rect key="frame" x="353" y="275" width="320" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otv-E4-xyf">
+                    <rect key="frame" x="354" y="275" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="fiK-6g-gpS"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="E9AEEA1B-D0D3-4D29-8CDF-78553F31A20C" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-nh-k5g">
+                    <rect key="frame" x="14" y="275" width="320" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-aU-cYV">
+                    <rect key="frame" x="16" y="275" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ShL-CG-IfW"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="EAACC159-6BC5-4BB3-84D8-6FE0B9EF3D40" translatesAutoresizingMaskIntoConstraints="NO" id="MoA-gL-xyb">
+                    <rect key="frame" x="15" y="534" width="320" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-cv-uoc">
+                    <rect key="frame" x="16" y="534" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="fID-7F-2CN"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D5BB2A98-9679-4BEF-BCB4-F78B406468E8" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-EV-b50">
+                    <rect key="frame" x="691" y="275" width="319" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2Z-Bp-c7C">
+                    <rect key="frame" x="692" y="275" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="pPj-ll-eqG"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="90AFD984-26B6-4137-A943-708F1A81728E" translatesAutoresizingMaskIntoConstraints="NO" id="JYt-Vg-WRp">
+                    <rect key="frame" x="691" y="534" width="320" height="240"/>
+                </imageView>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpS-0t-uli">
+                    <rect key="frame" x="692" y="534" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="F4L-Rq-1Js"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B031D6E3-3672-49D1-862C-CA422B452F7D" translatesAutoresizingMaskIntoConstraints="NO" id="HPE-1T-WTN">
+                    <rect key="frame" x="352" y="1121" width="320" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKY-n3-QAl">
+                    <rect key="frame" x="354" y="1122" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="U8C-W7-eWp"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="C556573C-34A9-4F03-85B9-0D553ACF2CA5" translatesAutoresizingMaskIntoConstraints="NO" id="PWD-4t-5kt">
+                    <rect key="frame" x="15" y="1121" width="320" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-5u-rwa">
+                    <rect key="frame" x="15" y="1122" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q8O-a9-0Vg"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D8FE0457-AFA3-49EA-B015-FD0A90407F83" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-Wv-peB">
+                    <rect key="frame" x="691" y="1120" width="319" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jas-0m-7As">
+                    <rect key="frame" x="692" y="1122" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="y8P-3g-McZ"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="22C9E07E-28E0-4C26-AC0D-EC526EA2B98C" translatesAutoresizingMaskIntoConstraints="NO" id="x0J-fd-wWu">
+                    <rect key="frame" x="691" y="793" width="320" height="308"/>
+                </imageView>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-l5-1pq">
+                    <rect key="frame" x="691" y="793" width="318" height="308"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="CIB-oy-8H6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9t-hG-Buy">
+                    <rect key="frame" x="16" y="15" width="318" height="240"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fyjchooseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="mWW-a0-YoM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.93725490196078431" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="599" y="1073"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1FC5134D-F12B-4A4A-8F13-C511E6E04255" width="320" height="240"/>
+        <image name="22C9E07E-28E0-4C26-AC0D-EC526EA2B98C" width="320" height="308"/>
+        <image name="5607EE55-2606-4CF1-8820-8B3E63A19190" width="320" height="308"/>
+        <image name="90AFD984-26B6-4137-A943-708F1A81728E" width="320" height="240"/>
+        <image name="B031D6E3-3672-49D1-862C-CA422B452F7D" width="320" height="308"/>
+        <image name="B63CA70C-919A-4565-B450-A605E7CED819" width="319" height="308"/>
+        <image name="C556573C-34A9-4F03-85B9-0D553ACF2CA5" width="320" height="308"/>
+        <image name="D5BB2A98-9679-4BEF-BCB4-F78B406468E8" width="319" height="240"/>
+        <image name="D8FE0457-AFA3-49EA-B015-FD0A90407F83" width="319" height="308"/>
+        <image name="E7BBC57E-ADE2-4270-8CEE-17C11B54A0BD" width="320" height="240"/>
+        <image name="E9AEEA1B-D0D3-4D29-8CDF-78553F31A20C" width="320" height="240"/>
+        <image name="EAACC159-6BC5-4BB3-84D8-6FE0B9EF3D40" width="320" height="240"/>
+        <image name="index11" width="318" height="240"/>
+        <image name="index12" width="319" height="240"/>
+        <image name="index13" width="319" height="240"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

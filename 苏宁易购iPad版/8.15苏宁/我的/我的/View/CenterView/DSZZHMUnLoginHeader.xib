@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="unLoginHeader" id="VQu-oo-SB2" customClass="DSZZHMUnLoginHeader">
+            <rect key="frame" x="0.0" y="0.0" width="874" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myEbuyBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="LhF-Yf-Z6v">
+                    <rect key="frame" x="0.0" y="0.0" width="874" height="149"/>
+                    <color key="backgroundColor" white="0.8965447809" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello ！！欢迎来到苏宁易购" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egh-Q6-9AW">
+                    <rect key="frame" x="0.0" y="44" width="874" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3r-pv-ZVc" customClass="DSZZHMButton">
+                    <rect key="frame" x="375" y="89" width="122" height="36"/>
+                    <color key="backgroundColor" white="0.8965447809" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="登陆/注册">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="VQu-oo-SB2" eventType="touchUpInside" id="PgS-2k-sak"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.8965447809" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LhF-Yf-Z6v" firstAttribute="leading" secondItem="VQu-oo-SB2" secondAttribute="leading" id="CfC-yl-QgP"/>
+                <constraint firstItem="LhF-Yf-Z6v" firstAttribute="top" secondItem="VQu-oo-SB2" secondAttribute="top" id="Xhp-jH-1Ko"/>
+                <constraint firstAttribute="bottom" secondItem="LhF-Yf-Z6v" secondAttribute="bottom" id="YiO-i1-WOE"/>
+                <constraint firstAttribute="trailing" secondItem="LhF-Yf-Z6v" secondAttribute="trailing" id="s8j-Ws-X3w"/>
+            </constraints>
+            <connections>
+                <outlet property="loginBtn" destination="u3r-pv-ZVc" id="PbM-pY-Wfg"/>
+            </connections>
+            <point key="canvasLocation" x="556" y="309.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="myEbuyBack.png" width="872" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerview" id="4XV-bc-9Yn" customClass="DSZSYFBigReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfi-ik-sVr">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="86Z-6x-76Y">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="250"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="数码独立" translatesAutoresizingMaskIntoConstraints="NO" id="vmN-kQ-Ecp">
+                            <rect key="frame" x="124" y="19" width="100" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="服装独立" translatesAutoresizingMaskIntoConstraints="NO" id="4f2-so-veb">
+                            <rect key="frame" x="357" y="13" width="100" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="电影独立" translatesAutoresizingMaskIntoConstraints="NO" id="mes-lN-ZiA">
+                            <rect key="frame" x="503" y="47" width="100" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="美食独立" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-78-v7W">
+                            <rect key="frame" x="626" y="34" width="100" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="旅行独立" translatesAutoresizingMaskIntoConstraints="NO" id="Ltp-O8-oMg">
+                            <rect key="frame" x="258" y="73" width="100" height="182"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.84267466599999996" blue="0.13341174159999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="bgImage" destination="86Z-6x-76Y" id="gXp-I9-l5M"/>
+                <outlet property="firImage" destination="vmN-kQ-Ecp" id="D87-et-rG9"/>
+                <outlet property="fiveImage" destination="1iR-78-v7W" id="aeT-Tw-HHr"/>
+                <outlet property="fourImage" destination="mes-lN-ZiA" id="TMQ-DF-3XE"/>
+                <outlet property="secImage" destination="Ltp-O8-oMg" id="jiP-VD-8mR"/>
+                <outlet property="thrImage" destination="4f2-so-veb" id="iXZ-Q9-nfc"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="431"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="BG" width="1024" height="250"/>
+        <image name="数码独立" width="100" height="200"/>
+        <image name="旅行独立" width="100" height="200"/>
+        <image name="服装独立" width="100" height="200"/>
+        <image name="电影独立" width="100" height="200"/>
+        <image name="美食独立" width="100" height="200"/>
+    </resources>
+</document>
